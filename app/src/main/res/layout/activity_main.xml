@@ -77,7 +77,34 @@
         app:layout_constraintStart_toStartOf="@id/creditCardContainer"
         app:layout_constraintBottom_toBottomOf="@id/creditCardContainer"
         android:layout_marginStart="60dp"
+        android:textColor="@color/white"
         android:layout_marginEnd="280dp"
+        />
+    <TextView
+        android:id="@+id/txtCvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cvv"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/editCreditCardNumber"
+        app:layout_constraintBottom_toBottomOf="@id/editCreditCardNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="000"
+        android:digits="123456789"
+        android:inputType="number"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="@id/editCreditCardNumber"
+        app:layout_constraintBottom_toBottomOf="@id/creditCardContainer"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
         />
 
 
